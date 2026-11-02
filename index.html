@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minu leht</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2933;
+      --muted: #616e7c;
+      --accent: #2563eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14181f;
+        --text: #e6e9ee;
+        --muted: #9aa5b1;
+        --accent: #6ea8fe;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header, main, footer {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem;
+    }
+    h1 { font-size: 2.25rem; margin: 0 0 0.5rem; }
+    h2 { margin-top: 2rem; }
+    p { color: var(--muted); }
+    a { color: var(--accent); }
+    nav a { margin-right: 1rem; }
+    footer { font-size: 0.9rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tere</h1>
+    <p>lobotoomia.</p>
+    <nav>
+      <a href="#minust">nga</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="minust">
+      <h2>Minust</h2>
+      <p>tutvustab.</p>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>Kirjuta mulle: <a href="mailto:laureik@gmail.com">nigga@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 laur</p>
+  </footer>
+</body>
+</html>
